@@ -1,0 +1,287 @@
+/* Réinitialisation globale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Header */
+header {
+    padding: 10px 20px;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav span a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: darkorange;
+}
+
+/* Section principale */
+main .hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero .main-image {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.hero .main-image:hover {
+    transform: scale(1.1);
+}
+
+h3 {
+    color: darkorange;
+}
+
+h2 {
+    color: white;
+    margin-top: 20px;
+}
+
+h5 {
+    color: white;
+    margin-top: 10px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+button {
+    font-weight: bold;
+    background-color: darkorange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin: 0 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: black;
+    transform: scale(1.05);
+}
+
+/* Section About */
+#about {
+    background-color: white;
+    color: black;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black;
+    transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+    transform: translateY(-10px);
+}
+
+/* Icônes sociales */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: black;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: darkorange;
+}
+
+
+/* Section du menu des cafés */
+#coffee-menu {
+    
+    padding: 50px 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.menu-title {
+    font-size: 2.5rem;
+    color: darkorange;
+    margin-bottom: 30px;
+}
+
+.coffee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.coffee-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.coffee-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.coffee-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.coffee-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.coffee-item p {
+    font-size: 1rem;
+    color: #666;
+    padding: 0 15px 20px;
+    line-height: 1.5;
+}
+/* Section Témoignages */
+#testimonials {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-item h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    color: darkorange;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: darkorange;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
